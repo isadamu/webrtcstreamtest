@@ -3,8 +3,8 @@
 let pc = new RTCPeerConnection({
     iceServers: [
         {
-            // urls: 'stun:stun.l.google.com:19302'
-            urls: 'stun:192.168.88.60:3478'
+            urls: 'stun:stun.l.google.com:19302'
+            // urls: 'stun:192.168.88.60:3478'
         }
     ]
 });
