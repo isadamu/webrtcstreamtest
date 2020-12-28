@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client-B</title>
+    <link rel="stylesheet" type="text/css" href="client-B.css">
+</head>
+<body>
+
+Remote Base64 Offer<br />
+<textarea id="RemoteBase64Offer"></textarea> <br/>
+<button onclick="window.setOffer()"> Set The Remote Offer </button> <br />
+
+<br />
+
+Local Base64 Answer<br />
+<textarea id="LocalBase64Answer" readonly="true"></textarea> <br />
+
+<br />
+
+<p>Local</p>
+<p id="local-stat-video-show"></p>
+<p id="local-stat-audio-show"></p>
+
+<video id="video1" width="320" height="240" autoplay muted></video> <br />
+
+<br />
+
+<p>Remote</p>
+<p id="remote-stat-video-show"></p>
+<p id="remote-stat-audio-show"></p>
+
+<video id="video2" width="320" height="240" autoplay muted></video> <br />
+
+<br />
+
+Message<br />
+<textarea id="message">This is my DataChannel message!</textarea> <br/>
+<button onclick="window.sendMessage()">Send Message</button> <br />
+
+<br />
+
+Logs<br />
+<div id="logs"></div>
+</body>
+
+<script type="text/javascript" src="/client-B.js"></script>
+
+<br />
+
+<div id="stats-video">
+
+</div>
+
+<br />
+
+<div id="stats-audio">
+
+</div>
+
+</html>
+
